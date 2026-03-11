@@ -32,7 +32,7 @@ export class CoffeeShopManager {
     this.totalRevenue = 0;
     this.orderHistory = [];
     this.nextOrderId = 1;
-    console.log("✅ [Singleton] CoffeeShopManager instance đã được khởi tạo!");
+    console.log("[Singleton] CoffeeShopManager instance da duoc khoi tao!");
   }
 
   // Phương thức static để lấy instance duy nhất
@@ -45,12 +45,12 @@ export class CoffeeShopManager {
 
   // Lấy thông tin cửa hàng
   public getShopInfo(): void {
-    console.log("─────────────────────────────────────────");
-    console.log(`🏪 Tên cửa hàng : ${this.shopName}`);
-    console.log(`🕐 Giờ mở cửa   : ${this.openingHours}`);
-    console.log(`💰 Doanh thu    : ${this.totalRevenue.toLocaleString("vi-VN")} VNĐ`);
-    console.log(`📋 Số đơn hàng  : ${this.orderHistory.length}`);
-    console.log("─────────────────────────────────────────");
+    console.log("-----------------------------------------");
+    console.log(`Ten cua hang : ${this.shopName}`);
+    console.log(`Gio mo cua   : ${this.openingHours}`);
+    console.log(`Doanh thu    : ${this.totalRevenue.toLocaleString("vi-VN")} VND`);
+    console.log(`So don hang  : ${this.orderHistory.length}`);
+    console.log("-----------------------------------------");
   }
 
   // Thêm đơn hàng mới
@@ -65,7 +65,7 @@ export class CoffeeShopManager {
     };
     this.orderHistory.push(order);
     this.totalRevenue += price;
-    console.log(`📝 Đơn hàng #${order.id}: ${customerName} - ${drinkName} (${size}) - ${price.toLocaleString("vi-VN")} VNĐ`);
+    console.log(`Don hang #${order.id}: ${customerName} - ${drinkName} (${size}) - ${price.toLocaleString("vi-VN")} VND`);
     return order;
   }
 
@@ -87,6 +87,6 @@ export class CoffeeShopManager {
   // Cập nhật tên cửa hàng
   public setShopName(name: string): void {
     this.shopName = name;
-    console.log(`🔄 Tên cửa hàng đã được cập nhật thành: "${name}"`);
+    console.log(`Ten cua hang da duoc cap nhat thanh: "${name}"`);
   }
 }

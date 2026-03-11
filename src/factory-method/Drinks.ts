@@ -47,10 +47,10 @@ export class Espresso implements Drink {
     return ["Hạt cà phê Arabica rang đậm", "Nước nóng 90°C"];
   }
   prepare(): void {
-    console.log(`   ☕ Xay hạt cà phê → Nén vào portafilter → Chiết xuất ${this.size}`);
+    console.log(`   Xay hat ca phe -> Nen vao portafilter -> Chiet xuat ${this.size}`);
   }
   serve(): void {
-    console.log(`   🍵 Phục vụ ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VNĐ`);
+    console.log(`   Phuc vu ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VND`);
   }
 }
 
@@ -73,10 +73,10 @@ export class Cappuccino implements Drink {
     return ["Espresso đôi", "Sữa tươi nguyên kem", "Bọt sữa mịn"];
   }
   prepare(): void {
-    console.log(`   ☕ Chiết xuất espresso → Đánh bọt sữa → Đổ theo tỉ lệ 1:1:1 (${this.size})`);
+    console.log(`   Chiet xuat espresso -> Danh bot sua -> Do theo ti le 1:1:1 (${this.size})`);
   }
   serve(): void {
-    console.log(`   🍵 Phục vụ ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VNĐ`);
+    console.log(`   Phuc vu ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VND`);
   }
 }
 
@@ -99,10 +99,10 @@ export class MatchaLatte implements Drink {
     return ["Bột matcha Nhật Bản", "Sữa tươi", "Siro đường mía"];
   }
   prepare(): void {
-    console.log(`   🍵 Hòa tan bột matcha → Đun nóng sữa → Khuấy đều (${this.size})`);
+    console.log(`   Hoa tan bot matcha -> Dun nong sua -> Khuay deu (${this.size})`);
   }
   serve(): void {
-    console.log(`   🍵 Phục vụ ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VNĐ`);
+    console.log(`   Phuc vu ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VND`);
   }
 }
 
@@ -125,10 +125,10 @@ export class CaramelMacchiato implements Drink {
     return ["Espresso", "Sữa tươi hấp", "Siro vanilla", "Sốt caramel"];
   }
   prepare(): void {
-    console.log(`   ☕ Hấp sữa → Thêm vanilla → Chiết espresso → Rưới caramel (${this.size})`);
+    console.log(`   Hap sua -> Them vanilla -> Chiet espresso -> Ruoi caramel (${this.size})`);
   }
   serve(): void {
-    console.log(`   🍵 Phục vụ ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VNĐ`);
+    console.log(`   Phuc vu ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VND`);
   }
 }
 
@@ -151,9 +151,9 @@ export class ColdBrew implements Drink {
     return ["Cà phê xay thô", "Nước lạnh", "Đá viên"];
   }
   prepare(): void {
-    console.log(`   🧊 Ngâm cà phê 12h trong nước lạnh → Lọc → Rót đá (${this.size})`);
+    console.log(`   Ngam ca phe 12h trong nuoc lanh -> Loc -> Rot da (${this.size})`);
   }
   serve(): void {
-    console.log(`   🍵 Phục vụ ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VNĐ`);
+    console.log(`   Phuc vu ${this.getName()} (${this.size}) - ${this.getPrice().toLocaleString("vi-VN")} VND`);
   }
 }

@@ -12,17 +12,17 @@ import {
 } from "./DrinkFactory";
 
 export function runFactoryMethodDemo(): void {
-  console.log("\n╔═══════════════════════════════════════════════╗");
-  console.log("║    🏭 FACTORY METHOD PATTERN - DEMO           ║");
-  console.log("╚═══════════════════════════════════════════════╝");
+  console.log("\n+-----------------------------------------------+");
+  console.log("|    FACTORY METHOD PATTERN - DEMO              |");
+  console.log("+-----------------------------------------------+");
   console.log();
-  console.log("📌 Mục đích: Định nghĩa một interface để tạo object,");
-  console.log("   nhưng để subclass quyết định class nào sẽ được khởi tạo.\n");
+  console.log("Muc dich: Dinh nghia mot interface de tao object,");
+  console.log("   nhung de subclass quyet dinh class nao se duoc khoi tao.\n");
 
   // ── Demo 1: Sử dụng trực tiếp từng Concrete Factory ──────
-  console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-  console.log("  📌 Demo 1: Tạo đồ uống qua Concrete Factories");
-  console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+  console.log("-----------------------------------------------");
+  console.log("  Demo 1: Tao do uong qua Concrete Factories");
+  console.log("-----------------------------------------------");
 
   const espressoFactory = new EspressoFactory();
   espressoFactory.orderDrink(DrinkSize.SMALL);
@@ -40,10 +40,10 @@ export function runFactoryMethodDemo(): void {
   coldBrewFactory.orderDrink(DrinkSize.LARGE);
 
   // ── Demo 2: Sử dụng Factory Registry (linh hoạt) ─────────
-  console.log("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-  console.log("  📌 Demo 2: Tạo đồ uống qua Factory Registry");
-  console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-  console.log("   (Client chỉ cần biết tên loại đồ uống, không cần biết class cụ thể)");
+  console.log("\n-----------------------------------------------");
+  console.log("  Demo 2: Tao do uong qua Factory Registry");
+  console.log("-----------------------------------------------");
+  console.log("   (Client chi can biet ten loai do uong, khong can biet class cu the)");
 
   const orders: Array<{ type: DrinkType; size: DrinkSize }> = [
     { type: "espresso", size: DrinkSize.LARGE },
@@ -57,10 +57,10 @@ export function runFactoryMethodDemo(): void {
   });
 
   // ── Demo 3: Minh họa tính đa hình (Polymorphism) ─────────
-  console.log("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-  console.log("  📌 Demo 3: Tính đa hình - Cùng method, khác kết quả");
-  console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-  console.log("   createDrink(DrinkSize.MEDIUM) với các factory khác nhau:\n");
+  console.log("\n-----------------------------------------------");
+  console.log("  Demo 3: Tinh da hinh - Cung method, khac ket qua");
+  console.log("-----------------------------------------------");
+  console.log("   createDrink(DrinkSize.MEDIUM) voi cac factory khac nhau:\n");
 
   const factories = [
     new EspressoFactory(),
@@ -77,7 +77,7 @@ export function runFactoryMethodDemo(): void {
     );
   });
 
-  console.log("\n✅ [Factory Method] Demo hoàn tất!\n");
+  console.log("\n[Factory Method] Demo hoan tat!\n");
 }
 
 // Chạy độc lập nếu gọi trực tiếp file này

@@ -26,9 +26,9 @@ export abstract class DrinkFactory {
 
   // Template method sử dụng factory method
   public orderDrink(size: DrinkSize): Drink {
-    const drink = this.createDrink(size); // Gọi factory method
-    console.log(`\n   🛒 Đặt hàng: ${drink.getName()} (${size})`);
-    console.log(`   📦 Nguyên liệu: ${drink.getIngredients().join(", ")}`);
+    const drink = this.createDrink(size);
+    console.log(`\n   Dat hang: ${drink.getName()} (${size})`);
+    console.log(`   Nguyen lieu: ${drink.getIngredients().join(", ")}`);
     drink.prepare();
     drink.serve();
     return drink;
