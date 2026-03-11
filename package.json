@@ -1,0 +1,22 @@
+{
+  "name": "lethithuyhien_22708291_designpattern",
+  "version": "1.0.0",
+  "description": "Coffee Shop Management System - Design Patterns: Singleton, Factory Method, Abstract Factory",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "start:singleton": "ts-node src/singleton/demo.ts",
+    "start:factory": "ts-node src/factory-method/demo.ts",
+    "start:abstract": "ts-node src/abstract-factory/demo.ts",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["design-patterns", "typescript", "coffee-shop"],
+  "author": "Le Thi Thuy Hien - 22708291",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
